@@ -1,0 +1,29 @@
+{
+  "name": "login_express-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "dev": "concurrently \"npm run start:server\" \"npm run start:studio\"",
+  "start:server": "ts-node-dev src/server.ts", 
+  "start:studio": "prisma studio"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "express": "^5.1.0",
+    "prisma": "^6.6.0",
+    "ts-node-dev": "^2.0.0",
+    "tsc": "^2.0.4",
+    "tsc-init": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "concurrently": "^9.1.2",
+    "typescript": "^5.8.3"
+  }
+}
