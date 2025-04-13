@@ -18,5 +18,5 @@ model usuario{
   id  Int @id @default(autoincrement())
   nome String
   email String  @unique
-  senha Int @unique
+  senha String 
 }
